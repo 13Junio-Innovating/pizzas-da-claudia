@@ -1,0 +1,514 @@
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas da Cl&#xe1;udia - As Melhores Pizzas Artesanais e Fermentação Natural</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Pizzas da Cl&#xe1;udia</h1>
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu">
+        <li><a href="#menu">Card&#xe1;pio</a></li>
+        <li><a href="#testimonials">Depoimentos</a></li>
+        <li><a href="#contact">Contato</a></li>
+    </ul>
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" placeholder="Buscar pizzas..." id="search-input">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+</header>
+
+<a href="https://wa.me/5531988035657" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<section class="hero">
+    <div>
+        <h2 style="font-size: 3rem; margin-bottom: 1rem;">Sabor e Tradi&#xe7;&#xe3;o</h2>
+        <p>As melhores pizzas artesanais e de Fermenta&#xe7;&#xe3;o natural da regi&#xe3;o</p>
+    </div>
+</section>
+
+<section id="menu" class="menu-section">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Nossas Pizzas</h2>
+    <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="salgada">Salgadas</button>
+        <button class="filter-btn" data-filter="vegetariana">Vegetariana</button>
+        <button class="filter-btn" data-filter="doce">Doces</button>
+        <button class="filter-btn" data-filter="brotinho">Brotinho</button>
+    </div>
+    <div class="menu-grid">
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Frango com Requeijão.jpg" alt="Pizza Frango com Requeijão" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Frango com Requeijão</h3>
+                <p class="pizza-description">Molho, mussarela, frango, milho, azeitona, requeijão e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Frango com Bacon.jpg" alt="Pizza Frango com Bacon" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Frango com Bacon</h3>
+                <p class="pizza-description">Molho, mussarela, frango, bacon, azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Frango Cremoso.jpg" alt="Pizza Frango Cremoso" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Frango Cremoso</h3>
+                <p class="pizza-description">Molho, mussarela, estrogonofe de frango, champignon, azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Frango com Cream Cheese.jpg" alt="Pizza Frango com Cream Cheese" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Frango com Cream Cheese</h3>
+                <p class="pizza-description">Molho, mussarela, frango, cream cheese, azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Portuguesa.jpg" alt="Pizza Portuguesa" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Portuguesa</h3>
+                <p class="pizza-description">Molho, Mussarela, presunto, ovo, tomate, azeitona, cebola, oregano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Costela.jpg" alt="Pizza Costela" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Costela</h3>
+                <p class="pizza-description">Molho, Mussarela, costela desfiada, requeijão, tomate cereja, pimenta biquinho, azeitona, orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 70,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Estrogonofe.jpg" alt="Pizza Estrogonofe" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Estrogonofe</h3>
+                <p class="pizza-description">Molho, Mussarela, estrogonofe de boi, champignon e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 70,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Maria Isabel.jpg" alt="Pizza Maria Isabel" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Maria Isabel</h3>
+                <p class="pizza-description">Molho, mussarela, carne seca, banana da terra na PEPERONE, Molho, mussarela, peperone e orégano, dourada na manteiga</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 70,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Carne Seca.jpg" alt="Pizza Carne Seca" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Carne Seca</h3>
+                <p class="pizza-description">Molho, Mussarela, carne seca, tomate seco, requeijão, azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 70,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Lombo com Abacaxi.jpg" alt="Pizza Lombo com Abacaxi" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Lombo com Abacaxi</h3>
+                <p class="pizza-description">Molho, Mussarela, lombo canadense, abacaxi, requeijão e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Lombo Canadense.jpg" alt="Pizza Lombo Canadense" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Lombo Canadense</h3>
+                <p class="pizza-description">Molho, mussarela, lombo canadense, requeijão azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Peperone.jpg" alt="Pizza Peperone" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Peperone</h3>
+                <p class="pizza-description">Molho, mussarela, peperone e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Calabresa.jpg" alt="Pizza Calabresa" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Calabresa</h3>
+                <p class="pizza-description">Molho, mussarela, calabresa, cebola e orégano     </p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Calabresa Apimentada.jpg" alt="Pizza Calabresa Apimentada" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Calabresa Apimentada</h3>
+                <p class="pizza-description">Molho, mussarela, calabresa ralada, apimentada, cebola, azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Bacon.jpg" alt="Pizza Bacon" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Bacon</h3>
+                <p class="pizza-description">Molho, mussarela, bacon, azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Bacon com Milho.jpg" alt="Pizza Bacon com Milho" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Bacon com Milho</h3>
+                <p class="pizza-description">Molho, mussarela, milho, bacon, azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Bacon com Brócolis.jpg" alt="Pizza Bacon com Brócolis" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Bacon com Brócolis</h3>
+                <p class="pizza-description">Molho, mussarela, brócolis, bacon, azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="salgada"> 
+            <img src="img/pizzas/Bacon com Brócolis.jpg" alt="Pizza Bacon com Brócolis" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Brócolis com Bacon</h3>
+                <p class="pizza-description">Molho, mussarela, brócolis, bacon, azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Gorgonzola com Bacon.jpg" alt="Pizza Gorgonzola com Bacon" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Gorgonzola com Bacon</h3>
+                <p class="pizza-description">Molho mussarela, gorgonzola, bacon e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Figo com Gorgonzola.jpg" alt="Pizza Figo com Gorgonzola" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Figo com Gorgonzola</h3>
+                <p class="pizza-description">Molho, mussarela, gorgonzola, figo e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Atum.jpg" alt="Pizza Atum" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Atum</h3>
+                <p class="pizza-description">Molho, mussarela atum, cebola e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Quatro Queijos.jpg" alt="Pizza Quatro Queijos" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Quatro Queijos</h3>
+                <p class="pizza-description">Molho, mussarela, provolone, gorgonzola, requeijão e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 65,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="salgada">
+            <img src="img/pizzas/Alho e Oléo.jpg" alt="Pizza Alho e Oléo" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Alho e Oléo</h3>
+                <p class="pizza-description">Molho, mussarela, alho dourado no azeite e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="vegetariana">
+            <img src="img/pizzas/Vegetariana.jpg" alt="Pizza Vegetariana" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Vegetariana</h3>
+                <p class="pizza-description">Molho, mussarela, palmito, brócolis, tomate cereja pimenta biquinho, azeitona e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="vegetariana">
+            <img src="img/pizzas/Ricota.jpg" alt="Pizza Ricota" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Ricota</h3>
+                <p class="pizza-description">Molho, mussarela, ricota, peito de peru defumado temperado com adobo, tomate cereja, azeitona, requeijão e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="vegetariana">
+            <img src="img/pizzas/Rúcula e Tomate Seco.jpg" alt="Pizza Rúcula e Tomate Seco" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Rúcula e Tomate Seco</h3>
+                <p class="pizza-description">Molho, mussarela, tomate seco, rúcula e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="vegetariana">
+            <img src="img/pizzas/Marguerita.jpg" alt="Pizza Marguerita" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Marguerita</h3>
+                <p class="pizza-description">Molho, mussarela, tomate, manjericão e orégano</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 65,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+         <div class="pizza-card" data-category="doce">
+            <img src="img/pizzas/California.jpg" alt="Pizza California" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Califonia</h3>
+                <p class="pizza-description">Creme de leite, mussarela abacaxi, pêssego, figo ameixa, cereja, leite condensado</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+         <div class="pizza-card" data-category="doce">
+            <img src="img/pizzas/Chocolate.jpg" alt="Pizza Chocolate" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Chocolate</h3>
+                <p class="pizza-description">Creme de leite, chocolate ralado</p>
+                <p></p>
+                <p></p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+         <div class="pizza-card" data-category="doce">
+            <img src="img/pizzas/Chocolate com Disquetes.jpg" alt="Pizza Chocolate com Disquetes" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Chocolate com Disquetes</h3>
+                <p class="pizza-description">Creme de leite, chocolate ralado, drágeas de chocolate</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+         <div class="pizza-card" data-category="doce">
+            <img src="img/pizzas/Banana Nevada.jpg" alt="Pizza Banana Nevada" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Banana Nevada</h3>
+                <p class="pizza-description">Creme de leite, mussarela, banana, canela, chocolate branco</p>
+                <p class="pizza-sizes">Brotinho (15cm) / Grande (35cm)</p>
+                <p class="pizza-price">R&#x24; 60,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza-card" data-category="brotinho">
+            <img src="img/pizzas/Brotinhos.jpg" alt="Brotinho" class="pizza-img">
+            <div class="pizza-info">
+                <h3 class="pizza-name">Brotinhos</h3>
+                <p class="pizza-description">Todas as pizzas tem tamanho brotinho</p>
+                <p class="pizza-sizes">Brotinho (15cm)</p>
+                <p class="pizza-price">R&#x24; 15,00</p>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="footer-grid">
+        <div>
+            <h3>Pizzas da Cl&#xe1;udia</h3>
+            <p>Fazendo as melhores pizzas desde 2015</p>
+            <div class="social-links">
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div>
+            <h3>Hor&#xe1;rio de Funcionamento</h3>
+            <p>Sexta a Sàbado</p>
+            <p>18:00 - 23:00</p>
+        </div>
+        <div>
+            <h3>Contato</h3>
+            <p>Telefone: (31) 988035657-</p>
+            <p>Email: contato@pizzasdaclaudia.com</p>
+            <p>Endere&#xe7;o: Rua das Pizzas, 123</p>
+        </div>
+    </div>
+</footer>
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+        <span class="close-modal">&#xd7;</span>
+        <h2>Meu Carrinho</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <p>Total: R&#x24; <span id="cart-total-amount">0.00</span></p>
+        </div>
+        <div class="ingredients-input">
+            <label for="ingredients-modifications">Modificações nos Ingredientes:</label>
+            <textarea id="ingredients-modifications" rows="3" placeholder="Adicione ou retire ingredientes (opcional)"></textarea>
+        </div>
+        <button class="buy-button">Finalizar Compra</button>
+    </div>
+</div>
+
+<div id="checkout-modal" class="cart-modal">
+    <div class="cart-content">
+        <span class="close-modal-checkout">&#xd7;</span>
+        <h2>Finalizar Pedido</h2>
+        
+        <div class="checkout-form">
+            <div class="form-group">
+                <label for="checkout-name">Nome Completo:</label>
+                <input type="text" id="checkout-name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="checkout-phone">Telefone:</label>
+                <input type="tel" id="checkout-phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="checkout-address">Endere&#xe7;o de Entrega:</label>
+                <textarea id="checkout-address" rows="3" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Forma de Pagamento:</label>
+                <div class="payment-options">
+                    <label>
+                        <input type="radio" name="payment" value="pix" checked>
+                        PIX
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="debit">
+                        Cart&#xe3;o de D&#xe9;bito
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="credit">
+                        Cart&#xe3;o de Cr&#xe9;dito
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <button class="checkout-button">Finalizar Pedido</button>
+    </div>
+</div>
+
+<!--
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+        <span class="close-modal">&#xd7;</span>
+        <h2>Meu Carrinho</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <p>Total: R&#x24; <span id="cart-total-amount">0.00</span></p>
+        </div>
+        <button class="buy-button"> Comprar </button>
+    </div>
+</div>
+
+<div id="confirmation-modal" class="cart-modal">
+    <div class="cart-content">
+        <span class="close-confirmation-modal">&#xd7;</span>
+        <h2>Confirmar Pedido</h2>
+        <div class="address-input">
+            <label for="confirm-customer-name">Nome Completo:</label>
+            <input type="text" id="confirm-customer-name" placeholder="Digite seu nome completo">
+        </div>
+        <div class="address-input">
+            <label for="confirm-delivery-address">Endere&#xe7;o de Entrega:</label>
+            <textarea id="confirm-delivery-address" rows="3" placeholder="Digite seu endere&#xe7;o completo"></textarea>
+        </div>
+        <button class="buy-button" id="confirm-purchase">Finalizar Compra</button>
+    </div>
+</div> -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
