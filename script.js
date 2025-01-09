@@ -73,7 +73,7 @@ document.querySelector('.checkout-button').addEventListener('click', () => {
     message += `\n\n*Forma de Pagamento:* ${paymentMethod.toUpperCase()}`;
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/5511999999999?text=${encodedMessage}`);
+    window.open(`https://wa.me/5548998091121?text=${encodedMessage}`);
     document.getElementById('cart-items').innerHTML = '';
     document.getElementById('cart-total-amount').textContent = '0.00';
     document.querySelector('.cart-count').textContent = '0';
