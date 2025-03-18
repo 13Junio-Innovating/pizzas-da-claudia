@@ -419,6 +419,7 @@
         </div>
     </div>
 </footer>
+<!-- Remova a duplicação do ID cart-modal -->
 <div id="cart-modal" class="cart-modal">
     <div class="cart-content">
         <span class="close-modal">&#xd7;</span>
@@ -431,10 +432,9 @@
             <label for="ingredients-modifications">Modificações nos Ingredientes:</label>
             <textarea id="ingredients-modifications" rows="3" placeholder="Adicione ou retire ingredientes (opcional)"></textarea>
         </div>
-        <button class="buy-button">Finalizar Compra</button>
+        <button class="buy-button">Finalizar Pedido</button>
     </div>
 </div>
-
 <div id="checkout-modal" class="cart-modal">
     <div class="cart-content">
         <span class="close-modal-checkout">&#xd7;</span>
@@ -456,30 +456,47 @@
                 <textarea id="checkout-address" rows="3" required></textarea>
             </div>
             
-            <div class="form-group">
-                <label>Forma de Pagamento:</label>
-                <div class="payment-options">
-                    <label>
-                        <input type="radio" name="payment" value="pix" checked>
-                        PIX
-                    </label>
-                    <label>
-                        <input type="radio" name="payment" value="debit">
-                        Cart&#xe3;o de D&#xe9;bito
-                    </label>
-                    <label>
-                        <input type="radio" name="payment" value="credit">
-                        Cart&#xe3;o de Cr&#xe9;dito
-                    </label>
+                <div class="form-group">
+                    <label>Forma de Pagamento:</label>
+                    <div class="payment-options">
+                        <label>
+                            <input type="radio" name="payment" value="pix" checked>
+                            PIX
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="debit">
+                            Cart&#xe3;o de D&#xe9;bito
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="credit">
+                            Cart&#xe3;o de Cr&#xe9;dito
+                        </label>
+                    </div>
+                    <!-- Taxa de entrega -->
+                    <div class="form-group">
+                        <label>Taxa de Entrega:</label>
+                        <div class="delivery-options">
+                            <label>
+                                <input type="radio" name="delivery" value="8" id="delivery-rio-vermelho" checked>
+                                Rio Vermelho - R$ 8,00
+                            </label>
+                            <label>
+                                <input type="radio" name="delivery" value="10" id="delivery-ingleses">
+                                Ingleses - R$ 10,00
+                            </label>
+                            <label>
+                                <input type="radio" name="delivery" value="15" id="delivery-santinho">
+                                Santinho - R$ 15,00
+                            </label>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
 
         <button class="checkout-button">Finalizar Pedido</button>
     </div>
 </div>
 
-<!--
 <div id="cart-modal" class="cart-modal">
     <div class="cart-content">
         <span class="close-modal">&#xd7;</span>
@@ -506,7 +523,7 @@
         </div>
         <button class="buy-button" id="confirm-purchase">Finalizar Compra</button>
     </div>
-</div> -->
+</div> 
 
 <script src="script.js"></script>
 
